@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(270deg, #54426b, #765DCE);
+    background-size: 400% 400%;
+    animation: fundo 10s ease infinite;
+    color: white;
+}
+h1{
+    text-shadow: 1px 1px black;
+    font-weight: 500;
+    margin: 1%;
+    letter-spacing: 0.5rem;
+}
+ul,ol,dl{
+    margin-left: 5%;
+    width: 50%;
+    letter-spacing: 0.2rem;
+}
+li{
+    font-size: 1.2rem;
+    margin: 0.3rem 0rem;
+    font-weight: 300;
+}
+dt{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 1rem 0rem;
+}
+dd{
+    font-size: 1.2rem;
+    margin: 0.3rem 0rem;
+}
+
+@keyframes fundo {
+    0%{background-position:100% 0%}
+    50%{background-position:0% 100%}
+    100%{background-position:100% 0%}
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Campo Minado Bem Ruim</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<main>
+		<h1>Campo Minado Bem Ruim</h1>
+		<section>
+			<div class="optionsContainer">
+				<label for="numberOfTilesX">Horizontal:</label>
+				<input type="number" class="sizeInputs" id="numberOfTilesX" value='10'></input>
+				<label for="numberOfTilesY">Vertical:</label>
+				<input type="number" class="sizeInputs" id="numberOfTilesY" value='10'></input>
+				<label for="mineInput">Minas:</label>
+				<input type="number" id="mineInput" value='20'></input>
+			</div>
+			<div class="modelContainer">
+				<h2 class="tileTotal">Total:</h2>
+				<div class="mapModel"></div>
+			</div>
+		</section>
+		<div class="buttonsContainer">
+			<button class="playButton">Jogar</button>
+			<button class="returnButton">Voltar</button>
+		</div>
+	</main>
+	<script type="text/javascript" src="../jquery-3.6.3.js"></script>
+	<script type="text/javascript" src="interface.js"></script>
+</body>
+</html>

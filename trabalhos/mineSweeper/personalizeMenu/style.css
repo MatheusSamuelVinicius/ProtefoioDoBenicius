@@ -1,0 +1,128 @@
+*{
+	box-sizing: border-box;
+}
+html,body{
+	background-color: #666;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+}
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+}
+main{
+	background: #ccc;
+	width: 50%;
+	height: 100%;
+	box-shadow: 0px 0px 10px black;
+	padding: 20px;
+	position: relative;
+}
+h1{
+	color: #666;
+	text-shadow: -1px -1px #111;
+	font-size: 2rem;
+	margin: 0px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+section{
+	width: 100%;
+	height:80%;
+}
+.optionsContainer{
+	width: 100%;
+	height: 30%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 2px;
+}
+label{
+	color: red;
+	font-size: 1.2rem;
+	text-align: center;
+}
+input[type = 'number']{
+	background: #333;
+	color: white;
+	border: none;
+	font-size: 1.2rem;
+	text-align: center;
+}
+.modelContainer{
+	width: 100%;
+	height: 70%;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+}
+h2{
+	text-align: center;
+	color: #0000ff;
+	margin: 0px;
+}
+.mapModel{
+	height: 50%;
+	max-width: 50%;
+	aspect-ratio: 1/1;
+	display: grid;
+	gap: 1px;
+	background: #777;
+	padding: 4px;
+}
+.mapModelCell{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #ccc;
+}
+
+.buttonsContainer{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	bottom: 0px;
+}
+button{
+	width: 30%;
+	padding: 5px;
+	font-size: 1.2rem;
+	background: #c03a3a;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	margin: 20px;
+	transition: 150ms;
+	cursor: pointer;
+	font-weight: bold;
+}
+button:hover{
+	background: #dc4040;
+	color: white;
+	scale: 1.1;
+}
+.playButton{
+	grid-column: 2;
+	grid-row: 3;
+}
+.returnButton{
+	grid-column: 2;
+	grid-row: 3;
+}
+button:active{
+	transform: scaleX(1.05) scaleY(1.1);
+}
+
+@media screen and (max-width: 600px){
+	main{
+		width: 100vw;
+		height: 100vh;
+		box-shadow: none;
+		padding: 5px;
+	}
+}
